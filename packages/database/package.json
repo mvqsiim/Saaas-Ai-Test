@@ -1,0 +1,24 @@
+{
+  "name": "@saas-ai-test/database",
+  "version": "0.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "prisma"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "prisma:generate": "prisma generate",
+    "prepare": "pnpm run build"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.14.0"
+  },
+  "devDependencies": {
+    "prisma": "^5.14.0",
+    "typescript": "workspace:^",
+    "eslint": "workspace:^",
+    "prettier": "workspace:^"
+  }
+}
